@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     'online dietician',
     'weight loss trainer Pakistan',
   ],
+  verification: {
+    google: 'bgmQa2DaQv6kfvCAdY-_jxF-kfgM_LdTmi0HLEWDCR0',
+  },
 };
 
 export default function RootLayout({
