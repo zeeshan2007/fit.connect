@@ -1,0 +1,660 @@
+[
+  {
+    "id": "dr-manayer-sajid",
+    "index": 1,
+    "name": "Dr. Manayer Sajid",
+    "initials": "MS",
+    "avatarGradient": [
+      "#42A5F5",
+      "#1565C0"
+    ],
+    "category": "Both",
+    "city": "Lahore",
+    "location": "Apka Muaalij",
+    "locationDetail": "In-Clinic",
+    "sessionType": "In-Person",
+    "experience": 4,
+    "experienceRaw": "4 Years (DPT, Clinical Nutritionist & Fitness Trainer)",
+    "degree": "DPT, Clinical Nutritionist, Fitness Trainer",
+    "certifications": [
+      "DPT",
+      "Clinical Nutritionist",
+      "Fitness Trainer"
+    ],
+    "fee": 1000,
+    "feeFormatted": "Rs. 1,000",
+    "specializations": [
+      "Neuro-muscular therapeutic lifting",
+      "rehabilitation specialized workout plans",
+      "posture correction."
+    ],
+    "bio": "4 years of experience with qualifications in DPT and Clinical Nutritionist. Specializing in Neuro-muscular therapeutic lifting, rehabilitation specialized workout plans. Available for in-person consultations in Lahore.",
+    "phone": "0423-2377001",
+    "rating": 5,
+    "reviewCount": 65
+  },
+  {
+    "id": "dr-asma-rehman",
+    "index": 2,
+    "name": "Dr. Asma Rehman",
+    "initials": "AR",
+    "avatarGradient": [
+      "#EF5350",
+      "#C62828"
+    ],
+    "category": "Trainer",
+    "city": "Lahore",
+    "location": "Apka Muaalij",
+    "locationDetail": "Independent",
+    "sessionType": "Online",
+    "experience": 2,
+    "experienceRaw": "2 Years (Physiotherapy & Fitness Trainer)",
+    "degree": "Physiotherapy, Fitness Trainer",
+    "certifications": [
+      "Physiotherapy",
+      "Fitness Trainer"
+    ],
+    "fee": 2000,
+    "feeFormatted": "Rs. 2,000",
+    "specializations": [
+      "Cardiorespiratory conditioning",
+      "core strengthening",
+      "rehabilitation lifting techniques."
+    ],
+    "bio": "2 years of experience with qualifications in Physiotherapy and Fitness Trainer. Specializing in Cardiorespiratory conditioning, core strengthening. Available for online consultations in Lahore.",
+    "phone": "0423-2377001",
+    "rating": 4.4,
+    "reviewCount": 41
+  },
+  {
+    "id": "mr-muhammad-zain-shahid",
+    "index": 3,
+    "name": "Mr. Muhammad Zain Shahid",
+    "initials": "MS",
+    "avatarGradient": [
+      "#C6F135",
+      "#7CB342"
+    ],
+    "category": "Dietician",
+    "city": "Lahore",
+    "location": "Physiofitt Clinic",
+    "locationDetail": "Excel Labs (Saddar)",
+    "sessionType": "In-Person",
+    "experience": null,
+    "experienceRaw": "BS (Human Nutrition and Dietetics)",
+    "degree": "BS (Human Nutrition and Dietetics",
+    "certifications": [
+      "BS (Human Nutrition and Dietetics"
+    ],
+    "fee": 2000,
+    "feeFormatted": "Rs. 2,000",
+    "specializations": [
+      "Nutritional Advice",
+      "Weight Loss Diet"
+    ],
+    "bio": "Experienced professional with qualifications in BS (Human Nutrition and Dietetics. Specializing in Nutritional Advice, Weight Loss Diet. Available for in-person consultations in Lahore.",
+    "phone": "03315788169",
+    "rating": 4.5,
+    "reviewCount": 93
+  },
+  {
+    "id": "mr-haseeb-ahmed",
+    "index": 4,
+    "name": "Mr. Haseeb Ahmed",
+    "initials": "HA",
+    "avatarGradient": [
+      "#C6F135",
+      "#7CB342"
+    ],
+    "category": "Dietician",
+    "city": "Peshawar",
+    "location": "Nusrat Hospital (Peshawar Road)",
+    "locationDetail": "",
+    "sessionType": "In-Person",
+    "experience": null,
+    "experienceRaw": "B.Sc (Hons) Human Nutrition and Dietetics, PhD Scholar",
+    "degree": "B.Sc (Hons) Human Nutrition and Dietetics, PhD Scholar",
+    "certifications": [
+      "B.Sc (Hons) Human Nutrition and Dietetics",
+      "PhD Scholar"
+    ],
+    "fee": 1500,
+    "feeFormatted": "Rs. 1,500",
+    "specializations": [
+      "Diet Counselling",
+      "Weight Loss And Management"
+    ],
+    "bio": "Experienced professional with qualifications in B.Sc (Hons) Human Nutrition and Dietetics and PhD Scholar. Specializing in Diet Counselling, Weight Loss And Management. Available for in-person consultations in Peshawar.",
+    "phone": "042-34500888",
+    "rating": 4.4,
+    "reviewCount": 80
+  },
+  {
+    "id": "dr-naeem-akram",
+    "index": 5,
+    "name": "Dr. Naeem Akram",
+    "initials": "NA",
+    "avatarGradient": [
+      "#42A5F5",
+      "#1565C0"
+    ],
+    "category": "Dietician",
+    "city": "Lahore",
+    "location": "Medics Clinics & Diagnostic Center (Saddar)",
+    "locationDetail": "",
+    "sessionType": "In-Person",
+    "experience": null,
+    "experienceRaw": "Ph.D (Nutritionist & Dietetics)",
+    "degree": "Ph.D (Nutritionist, Dietetics",
+    "certifications": [
+      "Ph.D (Nutritionist",
+      "Dietetics"
+    ],
+    "fee": 2000,
+    "feeFormatted": "Rs. 2,000",
+    "specializations": [
+      "Celiac Disease",
+      "Diabetes",
+      "Dietary Imbalances"
+    ],
+    "bio": "Experienced professional with qualifications in Ph.D (Nutritionist and Dietetics. Specializing in Celiac Disease, Diabetes. Available for in-person consultations in Lahore.",
+    "phone": "042-34500888",
+    "rating": 4.4,
+    "reviewCount": 62
+  },
+  {
+    "id": "ms-wajeeha-hassan",
+    "index": 6,
+    "name": "Ms. Wajeeha Hassan",
+    "initials": "WH",
+    "avatarGradient": [
+      "#00BCD4",
+      "#0097A7"
+    ],
+    "category": "Dietician",
+    "city": "Lahore",
+    "location": "Care Zone Medical Complex (Shadman Town)",
+    "locationDetail": "",
+    "sessionType": "In-Person",
+    "experience": null,
+    "experienceRaw": "Clinical Dietician, Clinical Nutritionist",
+    "degree": "Clinical Dietician, Clinical Nutritionist",
+    "certifications": [
+      "Clinical Dietician",
+      "Clinical Nutritionist"
+    ],
+    "fee": 1000,
+    "feeFormatted": "Rs. 1,000",
+    "specializations": [
+      "Medical Nutrition Therapy"
+    ],
+    "bio": "Experienced professional with qualifications in Clinical Dietician and Clinical Nutritionist. Specializing in Medical Nutrition Therapy. Available for in-person consultations in Lahore.",
+    "phone": "+92-3268473783",
+    "rating": 4.7,
+    "reviewCount": 65
+  },
+  {
+    "id": "dietition-urooj-fatima",
+    "index": 7,
+    "name": "Dietition Urooj Fatima",
+    "initials": "UF",
+    "avatarGradient": [
+      "#42A5F5",
+      "#1565C0"
+    ],
+    "category": "Dietician",
+    "city": "Lahore",
+    "location": "Sidra family hospital (Farooq Azam Road)",
+    "locationDetail": "",
+    "sessionType": "In-Person",
+    "experience": null,
+    "experienceRaw": "BS (Hons) Human Nutrition and Dietetics",
+    "degree": "BS (Hons) Human Nutrition and Dietetics",
+    "certifications": [
+      "BS (Hons) Human Nutrition and Dietetics"
+    ],
+    "fee": 500,
+    "feeFormatted": "Rs. 500",
+    "specializations": [
+      "Diet Plans",
+      "Weight Loss And Management"
+    ],
+    "bio": "Experienced professional with qualifications in BS (Hons) Human Nutrition and Dietetics. Specializing in Diet Plans, Weight Loss And Management. Available for in-person consultations in Lahore.",
+    "phone": "042-34500888",
+    "rating": 4.7,
+    "reviewCount": 35
+  },
+  {
+    "id": "sabeela-khan",
+    "index": 8,
+    "name": "Sabeela Khan",
+    "initials": "SK",
+    "avatarGradient": [
+      "#EF5350",
+      "#C62828"
+    ],
+    "category": "Dietician",
+    "city": "Lahore",
+    "location": "Asif Hospital (Quaid Avenue)",
+    "locationDetail": "",
+    "sessionType": "In-Person",
+    "experience": null,
+    "experienceRaw": "Doctor of Dietetics and Nutritional Sciences (DDNS)",
+    "degree": "Doctor of Dietetics and Nutritional Sciences (DDNS",
+    "certifications": [
+      "Doctor of Dietetics and Nutritional Sciences (DDNS"
+    ],
+    "fee": 2000,
+    "feeFormatted": "Rs. 2,000",
+    "specializations": [
+      "Assessment Diagnosis And Treatment Of Dietary And Nutritional Problems"
+    ],
+    "bio": "Experienced professional with qualifications in Doctor of Dietetics and Nutritional Sciences (DDNS. Specializing in Assessment Diagnosis And Treatment Of Dietary And Nutritional Problems. Available for in-person consultations in Lahore.",
+    "phone": "042-34500888",
+    "rating": 4,
+    "reviewCount": 41
+  },
+  {
+    "id": "dr-neha-maqsood",
+    "index": 9,
+    "name": "Dr. Neha Maqsood",
+    "initials": "NM",
+    "avatarGradient": [
+      "#42A5F5",
+      "#1565C0"
+    ],
+    "category": "Trainer",
+    "city": "Lahore",
+    "location": "Apka Muaalij",
+    "locationDetail": "Video Consultation",
+    "sessionType": "Online",
+    "experience": null,
+    "experienceRaw": "Physiotherapist, Fitness Trainer",
+    "degree": "Physiotherapist, Fitness Trainer",
+    "certifications": [
+      "Physiotherapist",
+      "Fitness Trainer"
+    ],
+    "fee": 1000,
+    "feeFormatted": "Rs. 1,000",
+    "specializations": [
+      "Rehabilitation Specialist",
+      "Fitness Trainer"
+    ],
+    "bio": "Experienced professional with qualifications in Physiotherapist and Fitness Trainer. Specializing in Rehabilitation Specialist, Fitness Trainer. Available for online consultations in Lahore.",
+    "phone": "0423-2377001",
+    "rating": 4.4,
+    "reviewCount": 78
+  },
+  {
+    "id": "ms-mariam-ejaz",
+    "index": 10,
+    "name": "Ms. Mariam Ejaz",
+    "initials": "ME",
+    "avatarGradient": [
+      "#00BCD4",
+      "#0097A7"
+    ],
+    "category": "Dietician",
+    "city": "Lahore",
+    "location": "Anwar Hospital (Cantt)",
+    "locationDetail": "",
+    "sessionType": "In-Person",
+    "experience": null,
+    "experienceRaw": "BSc (Hons) Human Nutrition and Dietetics",
+    "degree": "BSc (Hons) Human Nutrition and Dietetics",
+    "certifications": [
+      "BSc (Hons) Human Nutrition and Dietetics"
+    ],
+    "fee": 1500,
+    "feeFormatted": "Rs. 1,500",
+    "specializations": [
+      "Diet Plans Weight Loss And Management",
+      "Therapeutic Diet Plan"
+    ],
+    "bio": "Experienced professional with qualifications in BSc (Hons) Human Nutrition and Dietetics. Specializing in Diet Plans Weight Loss And Management, Therapeutic Diet Plan. Available for in-person consultations in Lahore.",
+    "phone": "042-34500888",
+    "rating": 4.3,
+    "reviewCount": 90
+  },
+  {
+    "id": "dr-mubeen-saeed",
+    "index": 11,
+    "name": "Dr. Mubeen Saeed",
+    "initials": "MS",
+    "avatarGradient": [
+      "#EC407A",
+      "#AD1457"
+    ],
+    "category": "Dietician",
+    "city": "Online",
+    "location": "Video Consultation",
+    "locationDetail": "",
+    "sessionType": "Online",
+    "experience": null,
+    "experienceRaw": "BS (Hons) Human Nutrition & Dietetics",
+    "degree": "BS (Hons) Human Nutrition, Dietetics",
+    "certifications": [
+      "BS (Hons) Human Nutrition",
+      "Dietetics"
+    ],
+    "fee": 1500,
+    "feeFormatted": "Rs. 1,500",
+    "specializations": [
+      "Diet Plans Diabetic Diet Cholesterol /Hypertension"
+    ],
+    "bio": "Experienced professional with qualifications in BS (Hons) Human Nutrition and Dietetics. Specializing in Diet Plans Diabetic Diet Cholesterol /Hypertension. Available for online consultations in Online.",
+    "phone": "042-34500888",
+    "rating": 5,
+    "reviewCount": 44
+  },
+  {
+    "id": "ms-aroosa-touseef",
+    "index": 12,
+    "name": "Ms. Aroosa Touseef",
+    "initials": "AT",
+    "avatarGradient": [
+      "#42A5F5",
+      "#1565C0"
+    ],
+    "category": "Dietician",
+    "city": "Islamabad",
+    "location": "oladoc",
+    "locationDetail": "Video Consultation",
+    "sessionType": "Online",
+    "experience": 4,
+    "experienceRaw": "4 Years (DDNS, MS)",
+    "degree": "DDNS",
+    "certifications": [
+      "DDNS"
+    ],
+    "fee": 2000,
+    "feeFormatted": "Rs. 2,000",
+    "specializations": [
+      "Weight Loss Counselor"
+    ],
+    "bio": "4 years of experience with qualifications in DDNS. Specializing in Weight Loss Counselor. Available for online consultations in Islamabad.",
+    "phone": "0518151800",
+    "rating": 5,
+    "reviewCount": 92
+  },
+  {
+    "id": "dr-nosheen-abbas",
+    "index": 13,
+    "name": "Dr. Nosheen Abbas",
+    "initials": "NA",
+    "avatarGradient": [
+      "#EF5350",
+      "#C62828"
+    ],
+    "category": "Dietician",
+    "city": "Islamabad",
+    "location": "oladoc",
+    "locationDetail": "Medicsi 3 Hospital",
+    "sessionType": "In-Person",
+    "experience": 18,
+    "experienceRaw": "18 Years (MBBS, MSPH)",
+    "degree": "MBBS, MSPH",
+    "certifications": [
+      "MBBS",
+      "MSPH"
+    ],
+    "fee": 3000,
+    "feeFormatted": "Rs. 3,000",
+    "specializations": [
+      "Certified PCOs specialist"
+    ],
+    "bio": "18 years of experience with qualifications in MBBS and MSPH. Specializing in Certified PCOs specialist. Available for in-person consultations in Islamabad.",
+    "phone": "0518151800",
+    "rating": 4.4,
+    "reviewCount": 49
+  },
+  {
+    "id": "ms-faiza-hanif",
+    "index": 14,
+    "name": "Ms. Faiza Hanif",
+    "initials": "FH",
+    "avatarGradient": [
+      "#00BCD4",
+      "#0097A7"
+    ],
+    "category": "Dietician",
+    "city": "Islamabad",
+    "location": "oladoc",
+    "locationDetail": "Video Consultation",
+    "sessionType": "Online",
+    "experience": 2,
+    "experienceRaw": "2 Years (DNS)",
+    "degree": "DNS",
+    "certifications": [
+      "DNS"
+    ],
+    "fee": 1000,
+    "feeFormatted": "Rs. 1,000",
+    "specializations": [
+      "Dietitian",
+      "Nutritionist"
+    ],
+    "bio": "2 years of experience with qualifications in DNS. Specializing in Dietitian, Nutritionist. Available for online consultations in Islamabad.",
+    "phone": "0518151800",
+    "rating": 4.7,
+    "reviewCount": 82
+  },
+  {
+    "id": "dr-saba-nawaz",
+    "index": 15,
+    "name": "Dr. Saba Nawaz",
+    "initials": "SN",
+    "avatarGradient": [
+      "#42A5F5",
+      "#1565C0"
+    ],
+    "category": "Dietician",
+    "city": "Lahore",
+    "location": "Instacare",
+    "locationDetail": "Video Consultation",
+    "sessionType": "Online",
+    "experience": 9,
+    "experienceRaw": "9 Years (Doctor of Dietetics and Nutritional Science)",
+    "degree": "Doctor of Dietetics and Nutritional Science",
+    "certifications": [
+      "Doctor of Dietetics and Nutritional Science"
+    ],
+    "fee": 2000,
+    "feeFormatted": "Rs. 2,000",
+    "specializations": [
+      "Nutritionist"
+    ],
+    "bio": "9 years of experience with qualifications in Doctor of Dietetics and Nutritional Science. Specializing in Nutritionist. Available for online consultations in Lahore.",
+    "phone": "03171777509",
+    "rating": 4.1,
+    "reviewCount": 93
+  },
+  {
+    "id": "dr-shehla-javed-akram",
+    "index": 16,
+    "name": "Dr. Shehla Javed Akram",
+    "initials": "SA",
+    "avatarGradient": [
+      "#EF5350",
+      "#C62828"
+    ],
+    "category": "Dietician",
+    "city": "Lahore",
+    "location": "Instacare",
+    "locationDetail": "Video Consultation",
+    "sessionType": "Online",
+    "experience": 35,
+    "experienceRaw": "35 Years (MBBS, DTM&H)",
+    "degree": "MBBS, DTM",
+    "certifications": [
+      "MBBS",
+      "DTM"
+    ],
+    "fee": 5000,
+    "feeFormatted": "Rs. 5,000",
+    "specializations": [
+      "Consultant Dietitian and Nutritionist"
+    ],
+    "bio": "35 years of experience with qualifications in MBBS and DTM. Specializing in Consultant Dietitian and Nutritionist. Available for online consultations in Lahore.",
+    "phone": "03171777509",
+    "rating": 4,
+    "reviewCount": 95
+  },
+  {
+    "id": "dr-ajmal",
+    "index": 17,
+    "name": "Dr. Ajmal",
+    "initials": "AJ",
+    "avatarGradient": [
+      "#FFA726",
+      "#EF6C00"
+    ],
+    "category": "Dietician",
+    "city": "Lahore",
+    "location": "Instacare",
+    "locationDetail": "Video Consultation",
+    "sessionType": "Online",
+    "experience": 5,
+    "experienceRaw": "5 Years (Doctor of Dietetics and Nutritional Science)",
+    "degree": "Doctor of Dietetics and Nutritional Science",
+    "certifications": [
+      "Doctor of Dietetics and Nutritional Science"
+    ],
+    "fee": 1500,
+    "feeFormatted": "Rs. 1,500",
+    "specializations": [
+      "Nutritionist"
+    ],
+    "bio": "5 years of experience with qualifications in Doctor of Dietetics and Nutritional Science. Specializing in Nutritionist. Available for online consultations in Lahore.",
+    "phone": "03171777509",
+    "rating": 4.6,
+    "reviewCount": 65
+  },
+  {
+    "id": "dr-hina-zulfiqar",
+    "index": 18,
+    "name": "Dr. Hina Zulfiqar",
+    "initials": "HZ",
+    "avatarGradient": [
+      "#FF7043",
+      "#E64A19"
+    ],
+    "category": "Dietician",
+    "city": "Lahore",
+    "location": "Instacare",
+    "locationDetail": "Video Consultation",
+    "sessionType": "Online",
+    "experience": 6,
+    "experienceRaw": "6 Years (M.Sc. Hons Human Nutrition)",
+    "degree": "M.Sc. Hons Human Nutrition",
+    "certifications": [
+      "M.Sc. Hons Human Nutrition"
+    ],
+    "fee": 1500,
+    "feeFormatted": "Rs. 1,500",
+    "specializations": [
+      "Nutritionist"
+    ],
+    "bio": "6 years of experience with qualifications in M.Sc. Hons Human Nutrition. Specializing in Nutritionist. Available for online consultations in Lahore.",
+    "phone": "03171777509",
+    "rating": 4,
+    "reviewCount": 89
+  },
+  {
+    "id": "dr-irfan-irshad-sulehria",
+    "index": 19,
+    "name": "Dr. Irfan Irshad Sulehria",
+    "initials": "IS",
+    "avatarGradient": [
+      "#EC407A",
+      "#AD1457"
+    ],
+    "category": "Dietician",
+    "city": "Lahore",
+    "location": "Instacare",
+    "locationDetail": "Video Consultation",
+    "sessionType": "Online",
+    "experience": 15,
+    "experienceRaw": "15 Years (PGD Dietetics, Pharm D)",
+    "degree": "PGD Dietetics, Pharm D",
+    "certifications": [
+      "PGD Dietetics",
+      "Pharm D"
+    ],
+    "fee": 2000,
+    "feeFormatted": "Rs. 2,000",
+    "specializations": [
+      "Nutritionist"
+    ],
+    "bio": "15 years of experience with qualifications in PGD Dietetics and Pharm D. Specializing in Nutritionist. Available for online consultations in Lahore.",
+    "phone": "03171777509",
+    "rating": 4.2,
+    "reviewCount": 30
+  },
+  {
+    "id": "dr-faraz-hafeez-pt",
+    "index": 20,
+    "name": "Dr. Faraz Hafeez Pt",
+    "initials": "FP",
+    "avatarGradient": [
+      "#00BCD4",
+      "#0097A7"
+    ],
+    "category": "Both",
+    "city": "Lahore",
+    "location": "Marham",
+    "locationDetail": "Video Consultation",
+    "sessionType": "Online",
+    "experience": 14,
+    "experienceRaw": "14 Years (MPhil in Sports Sciences)",
+    "degree": "MPhil in Sports Sciences",
+    "certifications": [
+      "MPhil in Sports Sciences"
+    ],
+    "fee": 3000,
+    "feeFormatted": "Rs. 3,000",
+    "specializations": [
+      "Fitness Trainer",
+      "Weight Management"
+    ],
+    "bio": "14 years of experience with qualifications in MPhil in Sports Sciences. Specializing in Fitness Trainer, Weight Management. Available for online consultations in Lahore.",
+    "phone": "03111222398",
+    "rating": 4.4,
+    "reviewCount": 54
+  },
+  {
+    "id": "prof-dr-tahira-sadiq",
+    "index": 21,
+    "name": "Prof. Dr. Tahira Sadiq",
+    "initials": "DS",
+    "avatarGradient": [
+      "#FF7043",
+      "#E64A19"
+    ],
+    "category": "Dietician",
+    "city": "Lahore",
+    "location": "Marham",
+    "locationDetail": "Video Consultation",
+    "sessionType": "Online",
+    "experience": 21,
+    "experienceRaw": "21 Years (MBBS, MPH, MHPE, PGD)",
+    "degree": "MBBS, MPH, MHPE, PGD",
+    "certifications": [
+      "MBBS",
+      "MPH",
+      "MHPE",
+      "PGD"
+    ],
+    "fee": 3000,
+    "feeFormatted": "Rs. 3,000",
+    "specializations": [
+      "Nutritionist",
+      "Metabolic Disorders"
+    ],
+    "bio": "21 years of experience with qualifications in MBBS and MPH. Specializing in Nutritionist, Metabolic Disorders. Available for online consultations in Lahore.",
+    "phone": "03111222398",
+    "rating": 4.1,
+    "reviewCount": 61
+  }
+]

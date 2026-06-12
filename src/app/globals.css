@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================
+   FitHire Design System — Global Styles
+   ======================================== */
+
+@layer base {
+  :root {
+    --color-base: #F5F5F5;
+    --color-card: #FFFFFF;
+    --color-accent: #C6F135;
+    --color-text: #0D0D0D;
+    --color-text-secondary: #6B7280;
+    --color-border: #E5E7EB;
+  }
+
+  .dark {
+    --color-base: #0D0D0D;
+    --color-card: #1A1A1A;
+    --color-accent: #C6F135;
+    --color-text: #F5F5F5;
+    --color-text-secondary: #A0A0A0;
+    --color-border: #2A2A2A;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body antialiased;
+    background: var(--color-base);
+    color: var(--color-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Card Styles */
+  .card {
+    @apply rounded-2xl border transition-all duration-300;
+    background: var(--color-card);
+    border-color: var(--color-border);
+  }
+
+  .dark .card {
+    @apply shadow-card;
+  }
+
+  :not(.dark) .card {
+    @apply shadow-card-light;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+  }
+
+  .dark .card:hover {
+    @apply shadow-card-hover;
+  }
+
+  :not(.dark) .card:hover {
+    @apply shadow-card-light-hover;
+  }
+
+  /* Button Styles */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-heading font-semibold uppercase tracking-wider transition-all duration-300;
+    background: var(--color-accent);
+    color: #0D0D0D;
+    min-height: 44px;
+  }
+
+  .btn-primary:hover {
+    @apply shadow-accent-glow;
+    background: #D4F55A;
+    transform: scale(1.03);
+  }
+
+  .btn-primary:active {
+    transform: scale(0.98);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-heading font-semibold uppercase tracking-wider transition-all duration-300 border;
+    color: var(--color-text);
+    border-color: var(--color-border);
+    min-height: 44px;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    transform: scale(1.03);
+  }
+
+  /* Badge Styles */
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider;
+  }
+
+  .badge-accent {
+    @apply badge;
+    background: rgba(198, 241, 53, 0.15);
+    color: var(--color-accent);
+  }
+
+  .badge-category {
+    @apply badge;
+    background: rgba(198, 241, 53, 0.2);
+    color: #0D0D0D;
+  }
+
+  .dark .badge-category {
+    color: var(--color-accent);
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+
+  .section-heading {
+    @apply font-heading text-heading-1 md:text-display-sm uppercase tracking-wider mb-4;
+  }
+
+  /* Input Styles */
+  .input {
+    @apply w-full px-4 py-3 rounded-xl border font-body transition-all duration-300 outline-none;
+    font-size: 1rem;
+    background: var(--color-card);
+    border-color: var(--color-border);
+    color: var(--color-text);
+    min-height: 44px;
+  }
+
+  .input:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(198, 241, 53, 0.2);
+  }
+
+  .input::placeholder {
+    color: var(--color-text-secondary);
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .dark ::-webkit-scrollbar-track {
+    background: #0D0D0D;
+  }
+
+  :not(.dark) ::-webkit-scrollbar-track {
+    background: #F5F5F5;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: #2A2A2A;
+    border-radius: 3px;
+  }
+
+  :not(.dark) ::-webkit-scrollbar-thumb {
+    background: #D1D5DB;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C6F135;
+  }
+}
+
+/* Star rating */
+.star-filled {
+  color: #C6F135;
+}
+
+.star-empty {
+  color: var(--color-border);
+}
+
+/* Avatar gradient */
+.avatar-gradient {
+  @apply flex items-center justify-center rounded-full font-heading font-bold uppercase;
+  color: #0D0D0D;
+}
