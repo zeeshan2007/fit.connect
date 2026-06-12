@@ -114,8 +114,13 @@ function ProfessionalCard({ professional: p, index = 0 }: ProfessionalCardProps)
 
 export default function AnimatedProfessionalCard({ professional, index = 0 }: ProfessionalCardProps) {
   const prefersReducedMotion = useReducedMotion();
+  const [mounted, setMounted] = React.useState(false);
 
-  if (prefersReducedMotion) {
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted || prefersReducedMotion) {
     return <ProfessionalCard professional={professional} index={index} />;
   }
 

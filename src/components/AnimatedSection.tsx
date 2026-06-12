@@ -36,10 +36,15 @@ export default function AnimatedSection({
   direction = 'up',
 }: AnimatedSectionProps) {
   const prefersReducedMotion = useReducedMotion();
+  const [mounted, setMounted] = React.useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-50px' });
 
-  if (prefersReducedMotion) {
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted || prefersReducedMotion) {
     return <div className={className}>{children}</div>;
   }
 

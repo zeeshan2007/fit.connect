@@ -7,6 +7,17 @@ import { useTheme } from '@/context/ThemeContext';
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
   const prefersReducedMotion = useReducedMotion();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <div className="w-10 h-10 rounded-xl border border-border dark:border-border transition-colors duration-300 opacity-20" />
+    );
+  }
 
   return (
     <button
