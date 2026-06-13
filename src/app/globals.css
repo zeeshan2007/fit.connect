@@ -8,9 +8,12 @@
 
 @layer base {
   :root {
-    --color-base: #F4FFD6;
-    --color-card: #F4FFD6;
-    --color-accent: #C6F135;
+    --color-base: #F8F9FA;
+    --color-card: #FFFFFF;
+    --color-accent: #15803D;
+    --color-accent-hover: #166534;
+    --color-accent-dark: #14532D;
+    --color-accent-text: #FFFFFF;
     --color-text: #0D0D0D;
     --color-text-secondary: #6B7280;
     --color-border: #E5E7EB;
@@ -20,6 +23,9 @@
     --color-base: #0D0D0D;
     --color-card: #1A1A1A;
     --color-accent: #C6F135;
+    --color-accent-hover: #D4F55A;
+    --color-accent-dark: #A8CC2D;
+    --color-accent-text: #0D0D0D;
     --color-text: #F5F5F5;
     --color-text-secondary: #A0A0A0;
     --color-border: #2A2A2A;
@@ -79,13 +85,13 @@
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-heading font-semibold uppercase tracking-wider transition-all duration-300;
     background: var(--color-accent);
-    color: #0D0D0D;
+    color: var(--color-accent-text);
     min-height: 44px;
   }
 
   .btn-primary:hover {
     @apply shadow-accent-glow;
-    background: #D4F55A;
+    background: var(--color-accent-hover);
     transform: scale(1.03);
   }
 

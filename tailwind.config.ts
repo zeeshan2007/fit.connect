@@ -12,16 +12,16 @@ const config: Config = {
       colors: {
         surface: {
           DEFAULT: "#0D0D0D",
-          light: "#F4FFD6",
+          light: "#F8F9FA",
         },
         card: {
           DEFAULT: "#1A1A1A",
-          light: "#F4FFD6",
+          light: "#FFFFFF",
         },
         accent: {
-          DEFAULT: "#C6F135",
-          hover: "#D4F55A",
-          dark: "#A8CC2D",
+          DEFAULT: "var(--color-accent)",
+          hover: "var(--color-accent-hover)",
+          dark: "var(--color-accent-dark)",
         },
         textPrimary: {
           DEFAULT: "#F5F5F5",
