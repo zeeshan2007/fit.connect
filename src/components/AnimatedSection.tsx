@@ -8,6 +8,7 @@ interface AnimatedSectionProps {
   className?: string;
   delay?: number;
   direction?: 'up' | 'down' | 'left' | 'right';
+  trigger?: 'view' | 'mount';
 }
 
 const directionVariants: Record<string, Variants> = {
@@ -34,6 +35,7 @@ export default function AnimatedSection({
   className = '',
   delay = 0,
   direction = 'up',
+  trigger = 'view',
 }: AnimatedSectionProps) {
   const prefersReducedMotion = useReducedMotion();
   const [mounted, setMounted] = React.useState(false);
@@ -48,12 +50,14 @@ export default function AnimatedSection({
     return <div className={className}>{children}</div>;
   }
 
+  const animateState = trigger === 'mount' ? 'visible' : (isInView ? 'visible' : 'hidden');
+
   return (
     <motion.div
       ref={ref}
       className={className}
       initial="hidden"
-      animate={isInView ? 'visible' : 'hidden'}
+      animate={animateState}
       variants={directionVariants[direction]}
       transition={{
         duration: 0.4,

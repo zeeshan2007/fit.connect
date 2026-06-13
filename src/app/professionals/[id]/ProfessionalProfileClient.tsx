@@ -78,11 +78,11 @@ export default function ProfessionalProfileClient({ professional: p }: Professio
   ];
 
   return (
-    <div className="pt-20 md:pt-24 min-h-screen dark:bg-base bg-surface-light text-text dark:text-text font-body transition-colors">
+    <div className="pt-20 md:pt-24 min-h-screen dark:bg-surface bg-surface-light text-textPrimary-light dark:text-textPrimary font-body transition-colors">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-12">
         
         {/* Back Link */}
-        <AnimatedSection className="mb-8">
+        <AnimatedSection className="mb-8" trigger="mount">
           <Link
             href="/browse"
             className="inline-flex items-center gap-2 text-sm text-textSecondary dark:text-textSecondary hover:text-accent transition-colors group"
@@ -101,7 +101,7 @@ export default function ProfessionalProfileClient({ professional: p }: Professio
           <div className="lg:col-span-4 space-y-6">
             
             {/* Avatar & Neon Frame */}
-            <AnimatedSection>
+            <AnimatedSection trigger="mount">
               <div className="card p-6 flex flex-col items-center text-center relative overflow-hidden group hover:border-accent/30 transition-all duration-300">
                 {/* Accent glow behind avatar */}
                 <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-40 h-40 rounded-full bg-accent/10 blur-2xl" />
@@ -122,7 +122,7 @@ export default function ProfessionalProfileClient({ professional: p }: Professio
                 </motion.div>
                 
                 {/* Meta details under avatar */}
-                <h2 className="font-heading text-2xl font-bold uppercase tracking-wider mt-5 text-text dark:text-text">
+                <h2 className="font-heading text-2xl font-bold uppercase tracking-wider mt-5 text-textPrimary-light dark:text-textPrimary">
                   {p.name}
                 </h2>
                 <div className="flex flex-wrap gap-2 justify-center mt-2">
@@ -133,7 +133,7 @@ export default function ProfessionalProfileClient({ professional: p }: Professio
             </AnimatedSection>
 
             {/* Quick Metrics / Stats Card */}
-            <AnimatedSection delay={0.1}>
+            <AnimatedSection delay={0.1} trigger="mount">
               <div className="card p-6 space-y-4 hover:border-accent/20 transition-all">
                 <h3 className="font-heading text-sm uppercase tracking-widest text-accent font-bold border-b dark:border-border border-border-light pb-2">
                   Key Metrics
@@ -192,7 +192,7 @@ export default function ProfessionalProfileClient({ professional: p }: Professio
             </AnimatedSection>
 
             {/* Bottom Left: Action CTA Buttons */}
-            <AnimatedSection delay={0.2}>
+            <AnimatedSection delay={0.2} trigger="mount">
               <div className="card p-6 space-y-3">
                 <Link
                   href={`/hire?professional=${encodeURIComponent(p.name)}`}
@@ -218,11 +218,11 @@ export default function ProfessionalProfileClient({ professional: p }: Professio
           <div className="lg:col-span-8 space-y-6">
             
             {/* Header Typography */}
-            <AnimatedSection>
+            <AnimatedSection trigger="mount">
               <div className="card p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 border-l-4 border-accent">
                 <div>
                   <span className="badge-accent text-xs font-semibold mb-2 inline-block">Certified Expert</span>
-                  <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-wider text-text dark:text-text mb-2">
+                  <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-wider text-textPrimary-light dark:text-textPrimary mb-2">
                     {p.name}
                   </h1>
                   <p className="text-textSecondary dark:text-textSecondary text-sm md:text-base font-semibold flex items-center gap-2">
@@ -247,7 +247,7 @@ export default function ProfessionalProfileClient({ professional: p }: Professio
             </AnimatedSection>
 
             {/* About / Bio Section */}
-            <AnimatedSection delay={0.1}>
+            <AnimatedSection delay={0.1} trigger="mount">
               <div className="card p-6 md:p-8 hover:border-accent/10 transition-all">
                 <div className="flex items-center gap-2.5 mb-4 border-b dark:border-border border-border-light pb-3">
                   <User size={20} className="text-accent" />
@@ -260,7 +260,7 @@ export default function ProfessionalProfileClient({ professional: p }: Professio
             </AnimatedSection>
 
             {/* Specialization Tags */}
-            <AnimatedSection delay={0.2}>
+            <AnimatedSection delay={0.2} trigger="mount">
               <div className="card p-6 md:p-8 hover:border-accent/10 transition-all">
                 <div className="flex items-center gap-2.5 mb-4 border-b dark:border-border border-border-light pb-3">
                   <Activity size={20} className="text-accent" />
@@ -280,7 +280,7 @@ export default function ProfessionalProfileClient({ professional: p }: Professio
             </AnimatedSection>
 
             {/* Dynamic Plans Offered */}
-            <AnimatedSection delay={0.3}>
+            <AnimatedSection delay={0.3} trigger="mount">
               <div className="card p-6 md:p-8 hover:border-accent/10 transition-all">
                 <div className="flex items-center gap-2.5 mb-4 border-b dark:border-border border-border-light pb-3">
                   <FileText size={20} className="text-accent" />
@@ -297,7 +297,7 @@ export default function ProfessionalProfileClient({ professional: p }: Professio
                         <Check size={12} strokeWidth={3} />
                       </div>
                       <div>
-                        <h4 className="font-heading text-sm uppercase tracking-wide font-bold mb-1.5 text-text dark:text-text">
+                        <h4 className="font-heading text-sm uppercase tracking-wide font-bold mb-1.5 text-textPrimary-light dark:text-textPrimary">
                           {plan.name}
                         </h4>
                         <p className="text-textSecondary dark:text-textSecondary text-xs leading-relaxed">
@@ -311,7 +311,7 @@ export default function ProfessionalProfileClient({ professional: p }: Professio
             </AnimatedSection>
 
             {/* Client Reviews Section */}
-            <AnimatedSection delay={0.4}>
+            <AnimatedSection delay={0.4} trigger="mount">
               <div className="card p-6 md:p-8 hover:border-accent/10 transition-all">
                 <div className="flex items-center gap-2.5 mb-6 border-b dark:border-border border-border-light pb-3">
                   <Star size={20} className="text-accent fill-accent" />
@@ -367,7 +367,7 @@ export default function ProfessionalProfileClient({ professional: p }: Professio
                         <p className="text-textSecondary dark:text-textSecondary text-sm leading-relaxed italic">
                           &ldquo;{t.text}&rdquo;
                         </p>
-                        <span className="block text-xs font-heading uppercase tracking-wider font-bold text-text dark:text-text">
+                        <span className="block text-xs font-heading uppercase tracking-wider font-bold text-textPrimary-light dark:text-textPrimary">
                           — {t.name}
                         </span>
                       </div>
