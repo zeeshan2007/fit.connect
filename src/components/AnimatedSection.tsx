@@ -35,7 +35,7 @@ export default function AnimatedSection({
   className = '',
   delay = 0,
   direction = 'up',
-  trigger = 'view',
+  trigger = 'mount',
 }: AnimatedSectionProps) {
   const prefersReducedMotion = useReducedMotion();
   const [mounted, setMounted] = React.useState(false);
