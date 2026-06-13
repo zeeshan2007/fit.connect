@@ -63,7 +63,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="dark:text-textSecondary text-textSecondary-light text-sm">
-                Lahore, Pakistan
+                Rawalpindi, Pakistan
               </li>
             </ul>
           </div>

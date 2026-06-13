@@ -18,11 +18,39 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  const categoryText = p.category === 'Both' ? 'Fitness Trainer & Dietician' : `${p.category}`;
-  
+  if (params.id === 'ibrahim-ghafoor-khan') {
+    return {
+      title: 'Ibrahim Ghafoor Khan — Trainer in Rawalpindi | FitHire',
+      description: 'Ibrahim Ghafoor Khan is a Certified Level 2 Fitness Trainer specializing in personalized fitness coaching, fat loss, muscle building, and workout programming in Rawalpindi, Pakistan. Book a session on FitHire.',
+      keywords: [
+        'Ibrahim Ghafoor Khan',
+        'trainer in rawalpindi',
+        'certified trainer pakistan',
+        'fitness trainer rawalpindi',
+        'Fat Loss Coaching',
+        'Muscle Building',
+        'Workout Programming',
+        'Diet Planning',
+        'Full Body Transformation'
+      ],
+      alternates: {
+        canonical: 'https://fit-hire.netlify.app/professionals/ibrahim-ghafoor-khan',
+      },
+      openGraph: {
+        title: 'Ibrahim Ghafoor Khan — Trainer in Rawalpindi | FitHire',
+        description: 'Ibrahim Ghafoor Khan is a Certified Level 2 Fitness Trainer specializing in personalized fitness coaching, fat loss, muscle building, and workout programming in Rawalpindi, Pakistan. Book a session on FitHire.',
+        url: 'https://fit-hire.netlify.app/professionals/ibrahim-ghafoor-khan',
+        type: 'profile',
+      },
+    };
+  }
+
+  const typeText = p.category.toLowerCase();
+  const specsText = p.specializations.join(', ');
+
   return {
-    title: `${p.name} - Certified ${categoryText} in ${p.city} | FitHire`,
-    description: p.bio,
+    title: `${p.name} — ${p.category} in ${p.city} | FitHire`,
+    description: `${p.name} is a certified ${typeText} offering ${specsText} in ${p.city}, Pakistan. Book a session on FitHire.`,
     keywords: [
       p.name,
       `${p.category.toLowerCase()} in ${p.city.toLowerCase()}`,
@@ -31,6 +59,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       ...p.specializations,
       ...p.certifications,
     ],
+    alternates: {
+      canonical: `https://fit-hire.netlify.app/professionals/${params.id}`,
+    },
+    openGraph: {
+      title: `${p.name} — ${p.category} in ${p.city} | FitHire`,
+      description: `${p.name} is a certified ${typeText} offering ${specsText} in ${p.city}, Pakistan. Book a session on FitHire.`,
+      url: `https://fit-hire.netlify.app/professionals/${params.id}`,
+      type: 'profile',
+    },
   };
 }
 

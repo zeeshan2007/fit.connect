@@ -1,10 +1,12 @@
 'use client';
 
-import React, { useState, useEffect, Suspense } from 'react';
+import React, { useState, useEffect, useMemo, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import AnimatedSection from '@/components/AnimatedSection';
 import { HireFormData } from '@/types';
+import { getAllProfessionals } from '@/lib/professionals';
+import { StarRating } from '@/components/ProfessionalCard';
 
 const goals = ['Weight Loss', 'Muscle Gain', 'Diet Plan', 'Rehabilitation', 'Custom'];
 const budgets = ['Under 5k', '5k–10k', '10k–20k', '20k+'];
@@ -81,6 +83,13 @@ function HireContent() {
     }
   }, [professionalName]);
 
+  const allProfessionals = getAllProfessionals();
+  const topRated = useMemo(() => {
+    return allProfessionals
+      .filter(p => p.id === 'ms-aroosa-touseef' || p.id === 'ibrahim-ghafoor-khan' || p.id === 'ms-faiza-hanif')
+      .sort((a, b) => b.reviewCount - a.reviewCount);
+  }, [allProfessionals]);
+
   const updateField = (field: keyof HireFormData, value: string | string[]) => {
     setForm(prev => ({ ...prev, [field]: value }));
   };
@@ -117,6 +126,14 @@ function HireContent() {
     }
   };
 
+  const handleSelect = (name: string) => {
+    setForm(prev => ({ ...prev, interestedIn: name }));
+    const el = document.getElementById('hire-form-container');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const handleSubmit = () => {
     const message = `🏋️ New Hiring Request\n\n👤 Client: ${form.fullName}\n📱 WhatsApp: ${form.whatsapp}\n📍 City: ${form.city}\n🎯 Goal: ${form.goal}\n💻 Session Type: ${form.sessionType}\n💰 Budget: ${form.budget}\n📅 Preferred Days: ${form.preferredDays.join(', ')}\n⏰ Preferred Time: ${form.preferredTime}\n🏥 Health Notes: ${form.healthNotes || 'None'}\n👨‍💼 Interested In: ${form.interestedIn || 'General Inquiry'}`;
 
@@ -142,8 +159,8 @@ function HireContent() {
 
   return (
     <div className="pt-20 md:pt-24 min-h-screen dark:bg-surface bg-surface-light">
-      <div className="max-w-2xl mx-auto px-4 md:px-8 py-8 md:py-12 font-body">
-        <AnimatedSection className="text-center mb-8">
+      <div className="max-w-5xl mx-auto px-4 md:px-8 py-8 md:py-12 font-body">
+        <AnimatedSection className="text-center mb-12">
           <h1 className="font-heading text-3xl md:text-display-sm font-bold uppercase tracking-wider mb-2 text-text dark:text-text">
             Hire a <span className="text-accent">Professional</span>
           </h1>
@@ -157,7 +174,63 @@ function HireContent() {
           )}
         </AnimatedSection>
 
-        <div className="card p-6 md:p-10">
+        {/* Top Rated Professionals Section */}
+        <AnimatedSection className="mb-16">
+          <div className="text-center mb-8">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wider mb-2 text-text dark:text-text">
+              ⭐ Top Rated Professionals — Most Reviews
+            </h2>
+            <p className="dark:text-textSecondary text-textSecondary-light text-sm">
+              Based on client reviews — our most trusted professionals
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {topRated.map((p) => (
+              <div key={p.id} className="card p-5 md:p-6 flex flex-col justify-between group relative border dark:border-border border-border-light">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div
+                      className="avatar-gradient w-12 h-12 flex items-center justify-center rounded-full text-md font-bold text-white flex-shrink-0"
+                      style={{
+                        background: `linear-gradient(135deg, ${p.avatarGradient[0]}, ${p.avatarGradient[1]})`,
+                      }}
+                    >
+                      {p.initials}
+                    </div>
+                    <div className="min-w-0">
+                      <h3 className="font-heading text-base font-bold uppercase tracking-wide truncate group-hover:text-accent transition-colors duration-300">
+                        {p.name}
+                      </h3>
+                      <div className="flex flex-wrap gap-1 mt-1">
+                        <span className="badge-accent text-[8px] md:text-[9px] px-1.5 py-0.5">{p.category}</span>
+                        <span className="badge-accent text-[8px] md:text-[9px] px-1.5 py-0.5">{p.sessionType}</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mb-4">
+                    <StarRating rating={p.rating} reviewCount={p.reviewCount} />
+                  </div>
+                  <p className="dark:text-textSecondary text-textSecondary-light text-xs line-clamp-3 mb-4 h-12">
+                    {p.bio}
+                  </p>
+                </div>
+                <button
+                  onClick={() => handleSelect(p.name)}
+                  className={`w-full py-2 px-4 rounded-xl text-xs font-semibold uppercase tracking-wider transition-all duration-300 border ${
+                    form.interestedIn === p.name
+                      ? 'bg-accent text-surface border-accent shadow-accent-glow'
+                      : 'dark:border-border border-border-light hover:border-accent dark:hover:text-accent hover:text-accent text-text dark:text-text bg-transparent'
+                  }`}
+                >
+                  {form.interestedIn === p.name ? 'Selected' : 'Select'}
+                </button>
+              </div>
+            ))}
+          </div>
+        </AnimatedSection>
+
+        <div id="hire-form-container" className="max-w-2xl mx-auto card p-6 md:p-10">
           <StepIndicator current={step} total={3} />
 
           <div className="relative overflow-hidden min-h-[340px]">

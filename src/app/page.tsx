@@ -1,11 +1,34 @@
 import React from 'react';
 import Link from 'next/link';
+import { Metadata } from 'next';
 import HeroSection from '@/components/HeroSection';
 import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
 import AnimatedSection from '@/components/AnimatedSection';
 import { getFeaturedProfessionals } from '@/lib/professionals';
 import AnimatedProfessionalCard from '@/components/ProfessionalCard';
+
+export const metadata: Metadata = {
+  title: 'FitHire — Find Certified Fitness Trainers & Dieticians in Rawalpindi, Pakistan',
+  description: 'Browse and hire certified fitness trainers, nutritionists, and dieticians in Rawalpindi, Pakistan. Connect instantly via WhatsApp — no sign-up required.',
+  keywords: [
+    'fitness trainer Rawalpindi',
+    'dietician Rawalpindi',
+    'nutritionist Rawalpindi',
+    'hire fitness trainer',
+    'online dietician',
+    'weight loss trainer Rawalpindi',
+  ],
+  alternates: {
+    canonical: 'https://fit-hire.netlify.app/',
+  },
+  openGraph: {
+    title: 'FitHire — Find Certified Fitness Trainers & Dieticians in Rawalpindi, Pakistan',
+    description: 'Browse and hire certified fitness trainers, nutritionists, and dieticians in Rawalpindi, Pakistan. Connect instantly via WhatsApp — no sign-up required.',
+    url: 'https://fit-hire.netlify.app/',
+    type: 'website',
+  },
+};
 
 export default function HomePage() {
   const featured = getFeaturedProfessionals(6);

@@ -656,5 +656,39 @@
     "phone": "03111222398",
     "rating": 4.1,
     "reviewCount": 61
+  },
+  {
+    "id": "ibrahim-ghafoor-khan",
+    "index": 22,
+    "name": "Ibrahim Ghafoor Khan",
+    "initials": "IG",
+    "avatarGradient": [
+      "#00E676",
+      "#00B0FF"
+    ],
+    "category": "Trainer",
+    "city": "Rawalpindi",
+    "location": "Rawalpindi, Pakistan",
+    "locationDetail": "In-Person + Online",
+    "sessionType": "Both",
+    "experience": 5,
+    "experienceRaw": "Certified Level 2 Fitness Trainer",
+    "degree": "Certified Level 2 Fitness Trainer",
+    "certifications": [
+      "Certified Level 2 Fitness Trainer"
+    ],
+    "fee": 1500,
+    "feeFormatted": "Rs. 1,500",
+    "specializations": [
+      "Fat Loss Coaching",
+      "Muscle Building",
+      "Workout Programming",
+      "Diet Planning",
+      "Full Body Transformation"
+    ],
+    "bio": "Ibrahim Ghafoor Khan is a Certified Level 2 Fitness Trainer specializing in personalized fitness coaching. He offers science-backed workout programs and diet plans tailored for fat loss and muscle building. With a sustainable, results-driven approach, he helps clients transform their bodies effectively.",
+    "phone": "+92 300 1234567",
+    "rating": 5.0,
+    "reviewCount": 85
   }
 ]

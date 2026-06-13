@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import BrowseClient from './BrowseClient';
 
 export const metadata: Metadata = {
-  title: 'Browse Certified Fitness Trainers & Nutritionists in Pakistan | FitHire',
+  title: 'Browse Fitness Trainers & Dieticians in Pakistan | FitHire',
   description:
     'Search and connect with the best certified gym trainers, dieticians, and nutritionists in Lahore, Karachi, Islamabad, and across Pakistan. Filter by city, category, and session type.',
   keywords: [
@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     'gym coach Lahore',
     'online fitness trainer Pakistan',
   ],
+  alternates: {
+    canonical: 'https://fit-hire.netlify.app/browse',
+  },
 };
 
 export default function BrowsePage() {
