@@ -78,7 +78,7 @@ export default function ProfessionalProfileClient({ professional: p }: Professio
   ];
 
   return (
-    <div className="pt-20 md:pt-24 min-h-screen dark:bg-surface bg-surface-light text-textPrimary-light dark:text-textPrimary font-body transition-colors">
+    <div className="pt-20 md:pt-24 pb-16 md:pb-24 dark:bg-surface bg-surface-light text-textPrimary-light dark:text-textPrimary font-body transition-colors">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-12">
         
         {/* Back Link */}

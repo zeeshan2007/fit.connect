@@ -50,7 +50,7 @@ function StepIndicator({ current, total }: { current: number; total: number }) {
 
 export default function HireClient() {
   return (
-    <Suspense fallback={<div className="pt-20 md:pt-24 min-h-screen dark:bg-surface bg-surface-light" />}>
+    <Suspense fallback={<div className="pt-20 md:pt-24 pb-16 md:pb-24 dark:bg-surface bg-surface-light" />}>
       <HireContent />
     </Suspense>
   );
@@ -158,9 +158,9 @@ function HireContent() {
   };
 
   return (
-    <div className="pt-20 md:pt-24 min-h-screen dark:bg-surface bg-surface-light">
+    <div className="pt-20 md:pt-24 pb-16 md:pb-24 dark:bg-surface bg-surface-light">
       <div className="max-w-5xl mx-auto px-4 md:px-8 py-8 md:py-12 font-body">
-        <AnimatedSection className="text-center mb-12">
+        <AnimatedSection className="text-center mb-12" trigger="mount">
           <h1 className="font-heading text-3xl md:text-display-sm font-bold uppercase tracking-wider mb-2 text-text dark:text-text">
             Hire a <span className="text-accent">Professional</span>
           </h1>
@@ -175,7 +175,7 @@ function HireContent() {
         </AnimatedSection>
 
         {/* Top Rated Professionals Section */}
-        <AnimatedSection className="mb-16">
+        <AnimatedSection className="mb-16" trigger="mount">
           <div className="text-center mb-8">
             <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wider mb-2 text-text dark:text-text">
               ⭐ Top Rated Professionals — Most Reviews

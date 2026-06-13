@@ -5,6 +5,7 @@ import HeroSection from '@/components/HeroSection';
 import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
 import AnimatedSection from '@/components/AnimatedSection';
+import FaqSection from '@/components/FaqSection';
 import { getFeaturedProfessionals } from '@/lib/professionals';
 import AnimatedProfessionalCard from '@/components/ProfessionalCard';
 
@@ -41,7 +42,7 @@ export default function HomePage() {
       {/* Featured Professionals */}
       <section className="section dark:bg-card bg-card-light">
         <div className="max-w-7xl mx-auto">
-          <AnimatedSection className="text-center mb-12 md:mb-16">
+          <AnimatedSection className="text-center mb-12 md:mb-16" trigger="mount">
             <span className="badge-accent text-xs mb-4 inline-block">Top Rated</span>
             <h2 className="section-heading">
               Featured <span className="text-accent">Professionals</span>
@@ -57,7 +58,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          <AnimatedSection className="text-center mt-10 md:mt-12">
+          <AnimatedSection className="text-center mt-10 md:mt-12" trigger="mount">
             <Link href="/browse" className="btn-primary">
               View All Professionals
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -74,10 +75,13 @@ export default function HomePage() {
       {/* Testimonials */}
       <Testimonials />
 
+      {/* FAQ Accordion */}
+      <FaqSection />
+
       {/* Final CTA */}
       <section className="section dark:bg-surface bg-surface-light">
         <div className="max-w-7xl mx-auto">
-          <AnimatedSection className="text-center">
+          <AnimatedSection className="text-center" trigger="mount">
             <h2 className="section-heading mb-6">
               Ready to Start Your <span className="text-accent">Fitness Journey</span>?
             </h2>

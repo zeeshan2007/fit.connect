@@ -11,7 +11,7 @@ import { Filters } from '@/types';
 
 export default function BrowseClient() {
   return (
-    <Suspense fallback={<div className="pt-20 md:pt-24 min-h-screen dark:bg-surface bg-surface-light" />}>
+    <Suspense fallback={<div className="pt-20 md:pt-24 pb-16 md:pb-24 dark:bg-surface bg-surface-light" />}>
       <BrowseContent />
     </Suspense>
   );
@@ -43,10 +43,10 @@ function BrowseContent() {
   }, [initialSearch]);
 
   return (
-    <div className="pt-20 md:pt-24 min-h-screen dark:bg-surface bg-surface-light">
+    <div className="pt-20 md:pt-24 pb-16 md:pb-24 dark:bg-surface bg-surface-light">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 font-body">
         {/* Header */}
-        <AnimatedSection className="mb-8">
+        <AnimatedSection className="mb-8" trigger="mount">
           <h1 className="font-heading text-3xl md:text-display-sm font-bold uppercase tracking-wider mb-2 text-text dark:text-text">
             Browse <span className="text-accent">Professionals</span>
           </h1>
