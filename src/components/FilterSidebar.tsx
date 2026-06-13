@@ -98,18 +98,7 @@ function FilterContent({
         ]}
       />
 
-      <FilterSelect
-        label="Price Range"
-        value={filters.priceRange}
-        onChange={(v) => updateFilter('priceRange', v)}
-        options={[
-          { value: 'all', label: 'Any Price' },
-          { value: 'under-1000', label: 'Under Rs. 1,000' },
-          { value: '1000-2000', label: 'Rs. 1,000 – 2,000' },
-          { value: '2000-3000', label: 'Rs. 2,000 – 3,000' },
-          { value: '3000-plus', label: 'Rs. 3,000+' },
-        ]}
-      />
+
 
       <FilterSelect
         label="Min Rating"
@@ -149,8 +138,6 @@ function FilterContent({
         onChange={(v) => updateFilter('sortBy', v)}
         options={[
           { value: 'rating', label: 'Top Rated' },
-          { value: 'price-low', label: 'Price: Low to High' },
-          { value: 'price-high', label: 'Price: High to Low' },
           { value: 'experience', label: 'Most Experienced' },
         ]}
       />

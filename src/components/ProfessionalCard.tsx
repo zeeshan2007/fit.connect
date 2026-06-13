@@ -38,77 +38,76 @@ function StarRating({ rating, reviewCount }: { rating: number; reviewCount?: num
 
 function ProfessionalCard({ professional: p, index = 0 }: ProfessionalCardProps) {
   return (
-    <Link href={`/professionals/${p.id}`} className="block">
-      <div className="card p-5 md:p-6 h-full flex flex-col cursor-pointer group">
-        {/* Top Section: Avatar + Info */}
-        <div className="flex items-start gap-4 mb-4">
-          {/* Avatar */}
+    <div className="card p-5 md:p-6 h-full flex flex-col group relative">
+      {/* Top Section: Avatar + Info */}
+      <div className="flex items-start gap-4 mb-4">
+        {/* Avatar */}
+        <Link href={`/professionals/${p.id}`} className="flex-shrink-0">
           <div
-            className="avatar-gradient w-14 h-14 md:w-16 md:h-16 flex-shrink-0 text-lg md:text-xl"
+            className="avatar-gradient w-14 h-14 md:w-16 md:h-16 flex items-center justify-center rounded-full text-lg md:text-xl"
             style={{
               background: `linear-gradient(135deg, ${p.avatarGradient[0]}, ${p.avatarGradient[1]})`,
             }}
           >
             {p.initials}
           </div>
+        </Link>
 
-          {/* Name & Category */}
-          <div className="flex-1 min-w-0">
-            <h3 className="font-heading text-lg md:text-xl font-bold uppercase tracking-wide truncate group-hover:text-accent transition-colors duration-300">
+        {/* Name & Category */}
+        <div className="flex-1 min-w-0">
+          <Link href={`/professionals/${p.id}`} className="block group/title">
+            <h3 className="font-heading text-lg md:text-xl font-bold uppercase tracking-wide truncate group-hover/title:text-accent transition-colors duration-300">
               {p.name}
             </h3>
-            <div className="flex flex-wrap items-center gap-2 mt-1">
-              <span className="badge-accent text-[10px]">{p.category}</span>
-              <span className="badge-accent text-[10px]">{p.sessionType}</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Specializations */}
-        <div className="flex flex-wrap gap-1.5 mb-4">
-          {p.specializations.slice(0, 3).map((spec, i) => (
-            <span
-              key={i}
-              className="text-[11px] px-2.5 py-1 rounded-full dark:bg-surface bg-gray-100 dark:text-textSecondary text-textSecondary-light border dark:border-border border-border-light"
-            >
-              {spec}
-            </span>
-          ))}
-        </div>
-
-        {/* Meta Row */}
-        <div className="mt-auto space-y-3">
-          <StarRating rating={p.rating} reviewCount={p.reviewCount} />
-
-          <div className="flex items-center justify-between pt-3 border-t dark:border-border border-border-light">
-            <div className="flex items-center gap-1.5 text-xs dark:text-textSecondary text-textSecondary-light">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
-              {p.city}
-            </div>
-            <div className="font-heading text-lg font-bold text-accent">
-              {p.feeFormatted}
-            </div>
-          </div>
-
-          {/* CTA */}
-          <div className="flex gap-2">
-            <span className="btn-secondary flex-1 text-xs py-2">
-              View Profile
-            </span>
-            <Link
-              href={`/hire?professional=${encodeURIComponent(p.name)}`}
-              onClick={(e) => e.stopPropagation()}
-              className="btn-primary flex-1 text-xs py-2"
-            >
-              Hire Now
-            </Link>
+          </Link>
+          <div className="flex flex-wrap items-center gap-2 mt-1">
+            <span className="badge-accent text-[10px]">{p.category}</span>
+            <span className="badge-accent text-[10px]">{p.sessionType}</span>
           </div>
         </div>
       </div>
-    </Link>
+
+      {/* Specializations */}
+      <div className="flex flex-wrap gap-1.5 mb-4">
+        {p.specializations.slice(0, 3).map((spec, i) => (
+          <span
+            key={i}
+            className="text-[11px] px-2.5 py-1 rounded-full dark:bg-surface bg-gray-100 dark:text-textSecondary text-textSecondary-light border dark:border-border border-border-light"
+          >
+            {spec}
+          </span>
+        ))}
+      </div>
+
+      {/* Meta Row */}
+      <div className="mt-auto space-y-3">
+        <StarRating rating={p.rating} reviewCount={p.reviewCount} />
+
+        <div className="flex items-center justify-between pt-3 border-t dark:border-border border-border-light">
+          <div className="flex items-center gap-1.5 text-xs dark:text-textSecondary text-textSecondary-light">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            {p.city}
+          </div>
+          {/* Price (fee) hidden */}
+        </div>
+
+        {/* CTA */}
+        <div className="flex gap-2">
+          <Link href={`/professionals/${p.id}`} className="btn-secondary flex-1 text-xs py-2 text-center">
+            View Profile
+          </Link>
+          <Link
+            href={`/hire?professional=${encodeURIComponent(p.name)}`}
+            className="btn-primary flex-1 text-xs py-2 text-center"
+          >
+            Hire Now
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 }
 

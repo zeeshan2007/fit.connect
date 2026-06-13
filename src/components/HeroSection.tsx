@@ -100,10 +100,10 @@ export default function HeroSection() {
 
   if (prefersReducedMotion) {
     return (
-      <section className="relative min-h-[90vh] flex items-center">
+      <section className="relative min-h-[75vh] flex items-center">
         <div className="absolute inset-0 dark:bg-gradient-to-br dark:from-surface dark:via-surface dark:to-card bg-gradient-to-br from-surface-light via-surface-light to-card-light" />
         <div className="absolute top-20 right-0 w-[500px] h-[500px] rounded-full bg-accent/5 blur-[120px]" />
-        <div className="relative max-w-7xl mx-auto px-4 md:px-8 py-24 md:py-32">
+        <div className="relative max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
           {content}
         </div>
       </section>
@@ -111,7 +111,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[75vh] flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 dark:bg-gradient-to-br dark:from-surface dark:via-surface dark:to-card bg-gradient-to-br from-surface-light via-surface-light to-card-light" />
       <motion.div
@@ -127,7 +127,7 @@ export default function HeroSection() {
 
       {/* Content */}
       <motion.div
-        className="relative max-w-7xl mx-auto px-4 md:px-8 py-24 md:py-32"
+        className="relative max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
