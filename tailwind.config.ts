@@ -12,11 +12,11 @@ const config: Config = {
       colors: {
         surface: {
           DEFAULT: "#0D0D0D",
-          light: "#F5F5F5",
+          light: "#F4FFD6",
         },
         card: {
           DEFAULT: "#1A1A1A",
-          light: "#FFFFFF",
+          light: "#F4FFD6",
         },
         accent: {
           DEFAULT: "#C6F135",
